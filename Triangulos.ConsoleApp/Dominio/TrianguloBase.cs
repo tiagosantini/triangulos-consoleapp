@@ -4,7 +4,9 @@ namespace Triangulos.ConsoleApp
     public class TrianguloBase
     {
         public double ladoX, ladoY, ladoZ;
-        public string tipo;
+        private string tipo;
+
+        public string Tipo { get => tipo; }
 
         public TrianguloBase()
         {
