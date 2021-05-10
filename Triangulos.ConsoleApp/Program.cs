@@ -11,7 +11,20 @@ namespace Triangulos.ConsoleApp
             ControladorTriangulo contraladorTriangulo = new ControladorTriangulo();
             TelaTriangulo telaTriangulo = new TelaTriangulo(contraladorTriangulo);
 
-            telaTriangulo.DefinirLados(3, 5, 4); // insere os valores dos lados (x, y, z)
+            // Teste Triângulo Equilátero
+            telaTriangulo.DefinirLados(5, 5, 5);
+            telaTriangulo.ApresentarTriangulo();
+
+            // Teste Triângulo Isósceles
+            telaTriangulo.DefinirLados(3, 4, 3);
+            telaTriangulo.ApresentarTriangulo();
+
+            // Teste Triângulo Escaleno
+            telaTriangulo.DefinirLados(3, 4, 5);
+            telaTriangulo.ApresentarTriangulo();
+
+            // Teste Triângulo Inválido
+            telaTriangulo.DefinirLados(11, 5, 5);
             telaTriangulo.ApresentarTriangulo();
 
             Console.ReadLine();

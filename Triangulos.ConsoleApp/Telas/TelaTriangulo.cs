@@ -22,7 +22,7 @@ namespace Triangulos.ConsoleApp.Telas
             TrianguloBase triangulo = controladorTriangulo.DefinirTriangulo();
 
             if (triangulo != null)
-                Console.WriteLine("O tipo de triângulo é: " + triangulo.Tipo);
+                Console.WriteLine(triangulo.Tipo);
             else
                 Console.WriteLine("Triângulo Inválido");
         }
